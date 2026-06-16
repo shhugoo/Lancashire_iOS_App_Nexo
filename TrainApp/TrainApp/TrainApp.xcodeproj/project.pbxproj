@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000100000001 /* TrainAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000100000002 /* TrainAppApp.swift */; };
+		A10000000000000100000003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000100000004 /* ContentView.swift */; };
+		A10000000000000100000005 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000100000006 /* Station.swift */; };
+		A10000000000000100000007 /* RouteSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000100000008 /* RouteSegment.swift */; };
+		A10000000000000100000009 /* RouteResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000010000000A /* RouteResult.swift */; };
+		A1000000000000010000000B /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000010000000C /* DatabaseManager.swift */; };
+		A1000000000000010000000D /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000010000000E /* Graph.swift */; };
+		A1000000000000010000000F /* PathfindingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000100000010 /* PathfindingService.swift */; };
+		A10000000000000100000011 /* DBParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000100000012 /* DBParser.swift */; };
+		A10000000000000100000013 /* StationMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000100000014 /* StationMapping.swift */; };
+		A10000000000000100000015 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000100000016 /* AppState.swift */; };
+		A10000000000000100000017 /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000100000018 /* ResourceLoader.swift */; };
+		A1000000000000010000003B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000010000003C /* NetworkService.swift */; };
+		A1000000000000010000003D /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000000000000010000003E /* Places.swift */; };
+		A10000000000000100000019 /* schema.sql in Resources */ = {isa = PBXBuildFile; fileRef = A1000000000000010000001A /* schema.sql */; };
+		A1000000000000010000001B /* seed.sql in Resources */ = {isa = PBXBuildFile; fileRef = A1000000000000010000001C /* seed.sql */; };
+		A1000000000000010000001D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000000000000010000001E /* Assets.xcassets */; };
+		A10000000000000100000039 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A1000000000000010000003A /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A10000000000000100000002 /* TrainAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainAppApp.swift; sourceTree = "<group>"; };
+		A10000000000000100000004 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A10000000000000100000006 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		A10000000000000100000008 /* RouteSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteSegment.swift; sourceTree = "<group>"; };
+		A1000000000000010000000A /* RouteResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteResult.swift; sourceTree = "<group>"; };
+		A1000000000000010000000C /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		A1000000000000010000000E /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		A10000000000000100000010 /* PathfindingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathfindingService.swift; sourceTree = "<group>"; };
+		A10000000000000100000012 /* DBParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBParser.swift; sourceTree = "<group>"; };
+		A10000000000000100000014 /* StationMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMapping.swift; sourceTree = "<group>"; };
+		A10000000000000100000016 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A10000000000000100000018 /* ResourceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoader.swift; sourceTree = "<group>"; };
+		A1000000000000010000003C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		A1000000000000010000003E /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
+		A1000000000000010000001A /* schema.sql */ = {isa = PBXFileReference; lastKnownFileType = text; path = schema.sql; sourceTree = "<group>"; };
+		A1000000000000010000001C /* seed.sql */ = {isa = PBXFileReference; lastKnownFileType = text; path = seed.sql; sourceTree = "<group>"; };
+		A1000000000000010000001E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A10000000000000100000020 /* TrainApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1000000000000010000003A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A10000000000000100000021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000100000039 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A10000000000000100000023 = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000100000002 /* TrainAppApp.swift */,
+				A10000000000000100000004 /* ContentView.swift */,
+				A10000000000000100000026 /* Models */,
+				A10000000000000100000027 /* Database */,
+				A10000000000000100000028 /* Pathfinding */,
+				A10000000000000100000029 /* Parser */,
+				A1000000000000010000002A /* Mapping */,
+				A1000000000000010000002B /* App */,
+				A1000000000000010000002C /* Resources */,
+				A1000000000000010000001E /* Assets.xcassets */,
+				A1000000000000010000002E /* Products */,
+				E3A0A28A2F476062008715F6 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		A10000000000000100000026 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000100000006 /* Station.swift */,
+				A10000000000000100000008 /* RouteSegment.swift */,
+				A1000000000000010000000A /* RouteResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A10000000000000100000027 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000010000000C /* DatabaseManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		A10000000000000100000028 /* Pathfinding */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000010000000E /* Graph.swift */,
+				A10000000000000100000010 /* PathfindingService.swift */,
+			);
+			path = Pathfinding;
+			sourceTree = "<group>";
+		};
+		A10000000000000100000029 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000100000012 /* DBParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		A1000000000000010000002A /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000100000014 /* StationMapping.swift */,
+			);
+			path = Mapping;
+			sourceTree = "<group>";
+		};
+		A1000000000000010000002B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000100000016 /* AppState.swift */,
+				A10000000000000100000018 /* ResourceLoader.swift */,
+				A1000000000000010000003C /* NetworkService.swift */,
+				A1000000000000010000003E /* Places.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A1000000000000010000002C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000010000001A /* schema.sql */,
+				A1000000000000010000001C /* seed.sql */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A1000000000000010000002E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000100000020 /* TrainApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3A0A28A2F476062008715F6 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				A1000000000000010000003A /* libsqlite3.tbd */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1000000000000010000002F /* TrainApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10000000000000100000030 /* Build configuration list for PBXNativeTarget "TrainApp" */;
+			buildPhases = (
+				A10000000000000100000031 /* Sources */,
+				A10000000000000100000021 /* Frameworks */,
+				A10000000000000100000032 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrainApp;
+			productName = TrainApp;
+			productReference = A10000000000000100000020 /* TrainApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A10000000000000100000033 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2620;
+			};
+			buildConfigurationList = A10000000000000100000034 /* Build configuration list for PBXProject "TrainApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A10000000000000100000023;
+			productRefGroup = A1000000000000010000002E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1000000000000010000002F /* TrainApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A10000000000000100000032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000100000019 /* schema.sql in Resources */,
+				A1000000000000010000001B /* seed.sql in Resources */,
+				A1000000000000010000001D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A10000000000000100000031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000100000001 /* TrainAppApp.swift in Sources */,
+				A10000000000000100000003 /* ContentView.swift in Sources */,
+				A10000000000000100000005 /* Station.swift in Sources */,
+				A10000000000000100000007 /* RouteSegment.swift in Sources */,
+				A10000000000000100000009 /* RouteResult.swift in Sources */,
+				A1000000000000010000000B /* DatabaseManager.swift in Sources */,
+				A1000000000000010000000D /* Graph.swift in Sources */,
+				A1000000000000010000000F /* PathfindingService.swift in Sources */,
+				A10000000000000100000011 /* DBParser.swift in Sources */,
+				A10000000000000100000013 /* StationMapping.swift in Sources */,
+				A10000000000000100000015 /* AppState.swift in Sources */,
+				A10000000000000100000017 /* ResourceLoader.swift in Sources */,
+				A1000000000000010000003B /* NetworkService.swift in Sources */,
+				A1000000000000010000003D /* Places.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A10000000000000100000035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A10000000000000100000036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A10000000000000100000037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = QZUWT52MP4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to show the nearest train station or bus stop.";
+				INFOPLIST_KEY_NSAppTransportSecurity = "{ NSAllowsArbitraryLoads = YES; }";
+				INFOPLIST_KEY_UIApplicationScene_Manifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = AppIcon;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ac.uk.lancaster.TrainApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A10000000000000100000038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = QZUWT52MP4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to show the nearest train station or bus stop.";
+				INFOPLIST_KEY_NSAppTransportSecurity = "{ NSAllowsArbitraryLoads = YES; }";
+				INFOPLIST_KEY_UIApplicationScene_Manifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = AppIcon;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ac.uk.lancaster.TrainApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A10000000000000100000030 /* Build configuration list for PBXNativeTarget "TrainApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000000000000100000037 /* Debug */,
+				A10000000000000100000038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A10000000000000100000034 /* Build configuration list for PBXProject "TrainApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000000000000100000035 /* Debug */,
+				A10000000000000100000036 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A10000000000000100000033 /* Project object */;
+}
